@@ -514,7 +514,7 @@
       var id = ytId(url);
       return id
         ? 'https://www.youtube.com/embed/' + id +
-          '?rel=0&modestbranding=1&autoplay=1&mute=1&loop=1&playlist=' + id + '&playsinline=1'
+          '?rel=0&modestbranding=1&autoplay=1&mute=1&loop=1&playlist=' + id + '&playsinline=1&vq=hd1080'
         : null;
     }
     if (type === 'google-drive') {
