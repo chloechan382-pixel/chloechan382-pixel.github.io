@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Community Story thumbnail">
+  <defs>
+    <linearGradient id="mossBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6E7F45"/>
+      <stop offset="100%" stop-color="#4F6F3E"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#mossBg)"/>
+  <!-- Scattered connection circles — community feel -->
+  <!-- Center circle -->
+  <circle cx="400" cy="250" r="44" fill="#FFF9EC" opacity="0.88"/>
+  <!-- Surrounding circles -->
+  <circle cx="260" cy="180" r="30" fill="#FFF9EC" opacity="0.75"/>
+  <circle cx="540" cy="175" r="34" fill="#FFF9EC" opacity="0.72"/>
+  <circle cx="220" cy="340" r="26" fill="#FFF9EC" opacity="0.68"/>
+  <circle cx="580" cy="330" r="32" fill="#FFF9EC" opacity="0.7"/>
+  <circle cx="400" cy="100" r="22" fill="#FFF9EC" opacity="0.6"/>
+  <circle cx="150" cy="250" r="20" fill="#FFF9EC" opacity="0.58"/>
+  <circle cx="650" cy="240" r="24" fill="#FFF9EC" opacity="0.62"/>
+  <!-- Connecting lines -->
+  <g stroke="#FFF9EC" stroke-width="1.5" opacity="0.3">
+    <line x1="400" y1="250" x2="260" y2="180"/>
+    <line x1="400" y1="250" x2="540" y2="175"/>
+    <line x1="400" y1="250" x2="220" y2="340"/>
+    <line x1="400" y1="250" x2="580" y2="330"/>
+    <line x1="400" y1="250" x2="400" y2="100"/>
+    <line x1="400" y1="250" x2="150" y2="250"/>
+    <line x1="400" y1="250" x2="650" y2="240"/>
+    <line x1="260" y1="180" x2="400" y2="100"/>
+    <line x1="260" y1="180" x2="150" y2="250"/>
+    <line x1="540" y1="175" x2="650" y2="240"/>
+    <line x1="220" y1="340" x2="150" y2="250"/>
+    <line x1="580" y1="330" x2="650" y2="240"/>
+  </g>
+  <!-- Small figure silhouettes in circles -->
+  <!-- Center figure -->
+  <circle cx="400" cy="238" r="8" fill="#4F6F3E" opacity="0.7"/>
+  <path d="M392,258 Q400,272 408,258" stroke="#4F6F3E" stroke-width="2" fill="none" opacity="0.7"/>
+  <!-- Small accent dots -->
+  <circle cx="340" cy="420" r="5" fill="#D6A84F" opacity="0.5"/>
+  <circle cx="460" cy="420" r="4" fill="#8FAF7A" opacity="0.5"/>
+  <circle cx="100" cy="120" r="5" fill="#D6A84F" opacity="0.4"/>
+  <circle cx="700" cy="400" r="5" fill="#8FAF7A" opacity="0.4"/>
+  <!-- Leaf accent bottom -->
+  <path d="M80,460 Q90,440 80,420 Q70,440 80,460Z" fill="#8FAF7A" opacity="0.4"/>
+  <path d="M720,455 Q730,435 720,415 Q710,435 720,455Z" fill="#8FAF7A" opacity="0.4"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Small Observations thumbnail">
+  <rect width="800" height="500" fill="#FFF9EC"/>
+  <!-- Paper texture lines -->
+  <line x1="0" y1="80" x2="800" y2="80" stroke="#2A241B" stroke-width="0.5" opacity="0.07"/>
+  <line x1="0" y1="160" x2="800" y2="160" stroke="#2A241B" stroke-width="0.5" opacity="0.07"/>
+  <line x1="0" y1="240" x2="800" y2="240" stroke="#2A241B" stroke-width="0.5" opacity="0.07"/>
+  <line x1="0" y1="320" x2="800" y2="320" stroke="#2A241B" stroke-width="0.5" opacity="0.07"/>
+  <line x1="0" y1="400" x2="800" y2="400" stroke="#2A241B" stroke-width="0.5" opacity="0.07"/>
+  <!-- Botanical elements — leaves and stems -->
+  <!-- Large leaf left -->
+  <path d="M140,380 Q80,280 130,200 Q160,260 140,380Z" fill="#8FAF7A" opacity="0.8"/>
+  <path d="M140,380 Q200,280 145,200" stroke="#4F6F3E" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <!-- Stem left -->
+  <line x1="140" y1="380" x2="140" y2="440" stroke="#4F6F3E" stroke-width="2" opacity="0.7"/>
+  <!-- Small leaf cluster center -->
+  <path d="M400,360 Q360,290 380,240 Q410,290 400,360Z" fill="#6E7F45" opacity="0.75"/>
+  <path d="M400,360 Q440,290 420,240" stroke="#4F6F3E" stroke-width="1.5" fill="none" opacity="0.55"/>
+  <line x1="400" y1="360" x2="400" y2="460" stroke="#4F6F3E" stroke-width="2" opacity="0.65"/>
+  <!-- Berry cluster right -->
+  <line x1="640" y1="460" x2="640" y2="340" stroke="#4F6F3E" stroke-width="2" opacity="0.7"/>
+  <circle cx="620" cy="310" r="16" fill="#B9825B" opacity="0.75"/>
+  <circle cx="650" cy="295" r="14" fill="#B9825B" opacity="0.65"/>
+  <circle cx="635" cy="278" r="12" fill="#D6A84F" opacity="0.7"/>
+  <!-- Small floating leaves -->
+  <ellipse cx="260" cy="180" rx="22" ry="10" fill="#8FAF7A" opacity="0.5" transform="rotate(-30 260 180)"/>
+  <ellipse cx="540" cy="140" rx="18" ry="8" fill="#6E7F45" opacity="0.5" transform="rotate(20 540 140)"/>
+  <ellipse cx="680" cy="200" rx="20" ry="9" fill="#8FAF7A" opacity="0.45" transform="rotate(-15 680 200)"/>
+  <!-- Small dots -->
+  <circle cx="200" cy="120" r="5" fill="#D6A84F" opacity="0.6"/>
+  <circle cx="580" cy="100" r="4" fill="#B9825B" opacity="0.5"/>
+  <circle cx="320" cy="430" r="5" fill="#8FAF7A" opacity="0.5"/>
+</svg>
