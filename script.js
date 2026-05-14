@@ -303,69 +303,102 @@
      giving a ~16-frame lag at 60 fps — a gentle trailing inertia.
   ---------------------------------------------------------------- */
   function initParallax() {
-    /* Respect user preference */
+    /* Respect user preference — make images immediately visible */
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-    /* Mobile: skip parallax (performance + layout concerns) */
+    /* Mobile: skip parallax, keep images visible */
     if (window.innerWidth < 760) return;
 
-    /* Register .img-wrap elements */
+    /* Tell CSS to hide images until JS reveals them */
+    document.body.classList.add('parallax-active');
+
+    /* Register .img-wrap — alternate diagonal entry: left / right */
     document.querySelectorAll('.img-wrap').forEach(function (el, i) {
+      var fromLeft = (i % 2 === 0);
       parallaxItems.push({
-        el:      el,
-        speed:   IMG_SPEEDS[i % IMG_SPEEDS.length],
-        current: 0,
-        target:  0
+        el:         el,
+        speed:      IMG_SPEEDS[i % IMG_SPEEDS.length],
+        current:    0,  target: 0,
+        enterX:     fromLeft ? -30 : 28,
+        enterXCur:  fromLeft ? -30 : 28,
+        enterYCur:  -42,
+        opacityCur: 0,
+        revealed:   false
       });
     });
 
-    /* Register .scatter-img elements */
+    /* Register .scatter-img — vary direction by index */
     document.querySelectorAll('.scatter-img').forEach(function (el, i) {
+      var fromLeft = (i % 3 !== 1);
       parallaxItems.push({
-        el:      el,
-        speed:   SCATTER_SPEEDS[i % SCATTER_SPEEDS.length],
-        current: 0,
-        target:  0
+        el:         el,
+        speed:      SCATTER_SPEEDS[i % SCATTER_SPEEDS.length],
+        current:    0,  target: 0,
+        enterX:     fromLeft ? -24 : 24,
+        enterXCur:  fromLeft ? -24 : 24,
+        enterYCur:  -32,
+        opacityCur: 0,
+        revealed:   false
       });
     });
 
     if (!parallaxItems.length) return;
 
+    /* IntersectionObserver fires the diagonal entry per element */
+    var revealObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        for (var j = 0; j < parallaxItems.length; j++) {
+          if (parallaxItems[j].el === e.target) {
+            parallaxItems[j].revealed = true;
+            break;
+          }
+        }
+        revealObs.unobserve(e.target);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
+
+    parallaxItems.forEach(function (item) { revealObs.observe(item.el); });
+
     var vh = window.innerHeight;
     window.addEventListener('resize', function () {
       vh = window.innerHeight;
       if (window.innerWidth < 760) {
-        /* Clean up transforms on resize to mobile */
         parallaxItems.forEach(function (item) {
           item.el.style.transform = '';
+          item.el.style.opacity   = '1';
           item.current = 0;
         });
       }
     });
 
+    /* REVEAL_LERP controls how fast the diagonal entry plays out.
+       Higher = snappier entry; LERP_FRICTION stays for ongoing parallax. */
+    var REVEAL_LERP = 0.055;
+
     function loop() {
       for (var i = 0; i < parallaxItems.length; i++) {
         var item = parallaxItems[i];
         var rect = item.el.getBoundingClientRect();
-
-        /* Only process elements near the viewport — saves work */
         if (rect.bottom < -200 || rect.top > vh + 200) continue;
 
-        /* Normalised position: 0 = element centre at top of viewport,
-           0.5 = at viewport centre, 1 = at viewport bottom          */
+        /* Ongoing parallax scroll offset */
         var elCentreY  = rect.top + rect.height * 0.5;
-        var normalised = elCentreY / vh - 0.5;  /* −0.5 … +0.5 */
-
-        /* Target displacement (bounded by ~vh × speed × 0.25 ≈ 12–24 px) */
-        item.target = normalised * item.speed * vh * 0.25;
-
-        /* Lerp toward target — friction creates the inertia feeling */
+        var normalised = elCentreY / vh - 0.5;
+        item.target  = normalised * item.speed * vh * 0.25;
         item.current += (item.target - item.current) * LERP_FRICTION;
 
-        /* Apply only when change is perceptible */
-        if (Math.abs(item.current) > 0.05) {
-          item.el.style.transform = 'translateY(' + item.current.toFixed(2) + 'px)';
+        /* Diagonal entry — lerp entry offsets toward 0 once revealed */
+        if (item.revealed) {
+          item.enterXCur  += (0 - item.enterXCur)  * REVEAL_LERP;
+          item.enterYCur  += (0 - item.enterYCur)  * REVEAL_LERP;
+          item.opacityCur += (1 - item.opacityCur) * (REVEAL_LERP * 1.6);
         }
+
+        item.el.style.transform =
+          'translateX(' + item.enterXCur.toFixed(2) + 'px) ' +
+          'translateY(' + (item.current + item.enterYCur).toFixed(2) + 'px)';
+        item.el.style.opacity = item.opacityCur.toFixed(3);
       }
       requestAnimationFrame(loop);
     }
@@ -479,7 +512,10 @@
     if (!url) return null;
     if (type === 'youtube') {
       var id = ytId(url);
-      return id ? 'https://www.youtube.com/embed/' + id + '?rel=0&modestbranding=1' : null;
+      return id
+        ? 'https://www.youtube.com/embed/' + id +
+          '?rel=0&modestbranding=1&autoplay=1&mute=1&loop=1&playlist=' + id + '&playsinline=1'
+        : null;
     }
     if (type === 'google-drive') {
       var fid = driveId(url);

@@ -311,12 +311,11 @@ figure { margin: 0; }
   max-width: var(--content-width);
   margin: 0 auto;
   padding: var(--space-9) var(--space-7);
-  /* no border — sections breathe into each other with white space */
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.7s var(--ease-soft), transform 0.7s var(--ease-soft);
+  /* reveal via transform only — opacity is handled per-image by JS */
+  transform: translateY(20px);
+  transition: transform 0.7s var(--ease-soft);
 }
-.project-section.is-visible { opacity: 1; transform: none; }
+.project-section.is-visible { transform: none; }
 
 /* Header: index + meta */
 .project-header {
@@ -578,7 +577,14 @@ figure { margin: 0; }
 /* Parallax — hint to browser for layer promotion */
 .img-wrap,
 .scatter-img {
-  will-change: transform;
+  will-change: transform, opacity;
+}
+
+/* When parallax is active, images start hidden; JS reveals them diagonally.
+   Without JS (or on mobile / reduced-motion) they stay fully visible. */
+.parallax-active .img-wrap,
+.parallax-active .scatter-img {
+  opacity: 0;
 }
 
 /* ================================================================
