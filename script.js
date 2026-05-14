@@ -512,10 +512,13 @@
     if (!url) return null;
     if (type === 'youtube') {
       var id = ytId(url);
-      return id
-        ? 'https://www.youtube.com/embed/' + id +
-          '?rel=0&modestbranding=1&autoplay=1&mute=1&loop=1&playlist=' + id + '&playsinline=1&vq=hd1080'
-        : null;
+      if (!id) return null;
+      /* Autoplay only works on HTTPS — skip it for local file:// preview */
+      var live = window.location.protocol !== 'file:';
+      var params = live
+        ? '?rel=0&modestbranding=1&autoplay=1&mute=1&loop=1&playlist=' + id + '&playsinline=1&vq=hd1080'
+        : '?rel=0&modestbranding=1';
+      return 'https://www.youtube.com/embed/' + id + params;
     }
     if (type === 'google-drive') {
       var fid = driveId(url);
