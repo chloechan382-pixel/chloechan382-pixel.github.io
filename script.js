@@ -314,7 +314,7 @@ if (embed) {
      GENERIC IMAGE WRAP (aside column images)
   ---------------------------------------------------------------- */
   function buildImgWrap(imgData) {
-    var wrap = el('span', 'img-wrap');
+    var wrap = el('div', 'img-wrap');
 
     var imgEl = document.createElement('img');
     imgEl.src     = imgData.src || '';
