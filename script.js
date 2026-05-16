@@ -248,9 +248,7 @@ if (embed) {
     if (Array.isArray(projectA.detailImages)) {
       candidates = candidates.concat(projectA.detailImages);
     }
-    if (Array.isArray(projectB.processImages)) {
-      candidates = candidates.concat(projectB.processImages.slice(0, 2));
-    }
+ // candidates from next project removed to avoid duplicates
 
     /* Pick the preset for this zone */
     var preset = SCATTER_PRESETS[zoneIndex % SCATTER_PRESETS.length];
