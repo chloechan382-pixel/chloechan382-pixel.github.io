@@ -921,3 +921,16 @@ figure { margin: 0; }
   .project-section,
   .section-reveal { opacity: 1 !important; transform: none !important; }
 }
+
+.project-main--shorts {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.project-main--shorts .video-embed {
+  flex: 1;
+  margin-top: 0 !important;
+  aspect-ratio: 9 / 16;
+  min-width: 0;
+}

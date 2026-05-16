@@ -120,7 +120,8 @@
     var body  = el('div', 'project-body project-body--' + align);
 
     /* Main column: video */
-    var main = el('div', 'project-main');
+    var isShorts = project.format === 'shorts';
+var main = el('div', isShorts ? 'project-main project-main--shorts' : 'project-main');
 if (embed) {
   var videoDiv = el('div', 'video-embed');
   videoDiv.dataset.src = embed;
@@ -165,6 +166,23 @@ if (embed) {
         'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>' +
       '</iframe>';
     main.appendChild(videoDiv3);
+  }
+
+  var embed4 = project.url4
+    ? getEmbedUrl({ type: project.type, url: project.url4 })
+    : null;
+  if (embed4) {
+    var videoDiv4 = el('div', 'video-embed');
+    videoDiv4.dataset.src = embed4;
+    videoDiv4.style.marginTop = '1.5rem';
+    videoDiv4.innerHTML =
+      '<div class="video-loading">' +
+        '<span class="video-loading-text">Loading&hellip;</span>' +
+      '</div>' +
+      '<iframe title="' + title + ' (part 4)" ' +
+        'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>' +
+      '</iframe>';
+    main.appendChild(videoDiv4);
   }
 
 } else {
