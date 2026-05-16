@@ -104,9 +104,9 @@ const projects = [
 
     description: "An experiment in archiving personal ephemera — ticket stubs, receipts, handwritten notes — into a visual document that reads like a diary.",
 
-    type: "google-drive",                  // ← VIDEO TYPE (google-drive this time)
-    url:  "https://drive.google.com/file/d/REPLACE_WITH_FILE_ID/view?usp=sharing",
-    // ↑ REPLACE THIS with your real Google Drive share link
+    type: "youtube",                       // ← VIDEO TYPE
+    url:  "https://www.youtube.com/watch?v=JSPoDgD-RTM",
+    // ↑ REPLACE THIS with your real YouTube link
 
     thumbnail: "assets/thumbnails/archive-experiment-thumbnail.jpg",
 
