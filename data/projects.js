@@ -63,10 +63,7 @@ url3: "https://www.youtube.com/watch?v=6TIl-3xs-og",
       // ← Add more lines here if you have more photos (up to ~4 looks best)
     ],
 
-    detailImages: [
-      // ↓ Optional extra images — leave [] empty if you don't need them
-      { src: "assets/process/field-notes-detail-01.jpg", alt: "Detail", caption: "Detail" }
-    ],
+    detailImages: [],
 
     tags: ["video", "research", "visual story"]
     // ↑ Short labels shown under the title. Add as many as you like.
@@ -124,9 +121,7 @@ url:  "https://www.youtube.com/shorts/L5_gvoBYQ8c",                    // ← VI
       { src: "assets/process/archive-experiment-03.jpg", alt: "Final spread",      caption: "Final spread" }
     ],
 
-    detailImages: [
-      { src: "assets/process/archive-experiment-detail-01.jpg", alt: "Spread detail", caption: "Spread detail" }
-    ],
+    detailImages: [],
 
     tags: ["design", "archive", "print"]
   }
