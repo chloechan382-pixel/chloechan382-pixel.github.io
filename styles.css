@@ -926,11 +926,14 @@ figure { margin: 0; }
 .project-main--shorts {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  float: left;
+  margin-right: 2rem;
+  width: 260px;
 }
 
 .project-main--shorts .video-embed {
   margin-top: 1rem;
   aspect-ratio: 9 / 16;
-  width: 400px;
+  width: 100%;
 }
