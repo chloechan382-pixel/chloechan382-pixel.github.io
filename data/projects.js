@@ -111,12 +111,9 @@ url:  "https://www.youtube.com/shorts/L5_gvoBYQ8c",                    // ← VI
 
     description: "An experiment in archiving personal ephemera — ticket stubs, receipts, handwritten notes — into a visual document that reads like a diary.",
 
-   type: "youtube",
-format: "shorts",                // ← VIDEO TYPE
-    url:  "https://www.youtube.com/shorts/eeycIpn2VnE",
-    url2: "https://www.youtube.com/shorts/TmRfTY55lWk",
-url3: "https://www.youtube.com/shorts/GS5dlBv1zxg",
-url4: "https://www.youtube.com/shorts/v7VDcSjWNnA",
+   type: "youtube",           // ← VIDEO TYPE
+    url:  "https://www.youtube.com/watch?v=-sQv68r94SI",
+   
     // ↑ REPLACE THIS with your real YouTube link
 
     thumbnail: "assets/thumbnails/archive-experiment-thumbnail.jpg",
