@@ -105,7 +105,7 @@ const projects = [
     description: "An experiment in archiving personal ephemera — ticket stubs, receipts, handwritten notes — into a visual document that reads like a diary.",
 
     type: "youtube",                       // ← VIDEO TYPE
-    url:  "https://www.youtube.com/watch?v=-sQv68r94SI",
+    url:  "https://www.youtube.com/watch?v=Ws4d1Nvt0g0",
     // ↑ REPLACE THIS with your real YouTube link
 
     thumbnail: "assets/thumbnails/archive-experiment-thumbnail.jpg",
