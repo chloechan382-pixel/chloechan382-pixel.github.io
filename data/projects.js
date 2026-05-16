@@ -85,7 +85,7 @@ url3: "https://www.youtube.com/watch?v=6TIl-3xs-og",
     type: "youtube",
 format: "shorts",
 url:  "https://www.youtube.com/shorts/L5_gvoBYQ8c",                    // ← VIDEO TYPE
-    url2:  "hhttps://www.youtube.com/shorts/PhW4xruDqMc",
+    url2:  "https://www.youtube.com/shorts/PhW4xruDqMc",
     url3: "https://www.youtube.com/shorts/b0927naS_Ww",
     // ↑ REPLACE THIS with your real YouTube link
 
