@@ -82,7 +82,9 @@ url3: "https://www.youtube.com/watch?v=6TIl-3xs-og",
 
     description: "A series of observational clips capturing the overlooked: morning routines, corner shops, the sound of rain on a tin roof.",
 
-    type: "youtube",                       // ← VIDEO TYPE
+    type: "youtube",
+format: "shorts",
+url:  "https://www.youtube.com/watch?v=Ws4d1Nvt0g0",                    // ← VIDEO TYPE
     url:  "https://www.youtube.com/watch?v=Ws4d1Nvt0g0",
     url2: "https://www.youtube.com/shorts/PhW4xruDqMc",
 url3: "https://www.youtube.com/shorts/b0927naS_Ww",
@@ -110,7 +112,9 @@ url3: "https://www.youtube.com/shorts/b0927naS_Ww",
 
     description: "An experiment in archiving personal ephemera — ticket stubs, receipts, handwritten notes — into a visual document that reads like a diary.",
 
-    type: "youtube",                       // ← VIDEO TYPE
+   type: "youtube",
+format: "shorts",
+url:  "https://www.youtube.com/watch?v=Ws4d1Nvt0g0",                   // ← VIDEO TYPE
     url:  "https://www.youtube.com/shorts/eeycIpn2VnE",
     url2: "https://www.youtube.com/shorts/TmRfTY55lWk",
 url3: "https://www.youtube.com/shorts/GS5dlBv1zxg",

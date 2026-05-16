@@ -581,7 +581,7 @@ if (embed) {
   }
 
   function ytId(url) {
-    var ps = [/[?&]v=([A-Za-z0-9_-]{11})/, /youtu\.be\/([A-Za-z0-9_-]{11})/, /embed\/([A-Za-z0-9_-]{11})/];
+    var ps = [/[?&]v=([A-Za-z0-9_-]{11})/, /youtu\.be\/([A-Za-z0-9_-]{11})/, /embed\/([A-Za-z0-9_-]{11})/, /shorts\/([A-Za-z0-9_-]{11})/];
     for (var i = 0; i < ps.length; i++) { var m = url.match(ps[i]); if (m) return m[1]; }
     return null;
   }
