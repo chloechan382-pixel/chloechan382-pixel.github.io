@@ -121,18 +121,87 @@
 
     /* Main column: video */
     var main = el('div', 'project-main');
-    if (embed) {
-      var videoDiv = el('div', 'video-embed');
-      videoDiv.dataset.src = embed;
-      videoDiv.innerHTML =
-        '<div class="video-loading">' +
-          '<span class="video-loading-text">Loading&hellip;</span>' +
-        '</div>' +
-        '<iframe title="' + title + '" ' +
-          'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>' +
-        '</iframe>';
-      main.appendChild(videoDiv);
-    } else {
+if (embed) {
+  var videoDiv = el('div', 'video-embed');
+  videoDiv.dataset.src = embed;
+  videoDiv.innerHTML =
+    '<div class="video-loading">' +
+      '<span class="video-loading-text">Loading&hellip;</span>' +
+    '</div>' +
+    '<iframe title="' + title + '" ' +
+      'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>' +
+    '</iframe>';
+  main.appendChild(videoDiv);
+
+  var embed2 = project.url2
+    ? getEmbedUrl({ type: project.type, url: project.url2 })
+    : null;
+  if (embed2) {
+    var videoDiv2 = el('div', 'video-embed');
+    videoDiv2.dataset.src = embed2;
+    videoDiv2.style.marginTop = '1.5rem';
+    videoDiv2.innerHTML =
+      '<div class="video-loading">' +
+        '<span class="video-loading-text">Loading&hellip;</span>' +
+      '</div>' +
+      '<iframe title="' + title + ' (part 2)" ' +
+        'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>' +
+      '</iframe>';
+    main.appendChild(videoDiv2);
+  }
+
+  var embed3 = project.url3
+    ? getEmbedUrl({ type: project.type, url: project.url3 })
+    : null;
+  if (embed3) {
+    var videoDiv3 = el('div', 'video-embed');
+    videoDiv3.dataset.src = embed3;
+    videoDiv3.style.marginTop = '1.5rem';
+    videoDiv3.innerHTML =
+      '<div class="video-loading">' +
+        '<span class="video-loading-text">Loading&hellip;</span>' +
+      '</div>' +
+      '<iframe title="' + title + ' (part 3)" ' +
+        'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>' +
+      '</iframe>';
+    main.appendChild(videoDiv3);
+  }
+
+  var embed2 = project.url2
+    ? getEmbedUrl({ type: project.type, url: project.url2 })
+    : null;
+  if (embed2) {
+    var videoDiv2 = el('div', 'video-embed');
+    videoDiv2.dataset.src = embed2;
+    videoDiv2.style.marginTop = '1.5rem';
+    videoDiv2.innerHTML =
+      '<div class="video-loading">' +
+        '<span class="video-loading-text">Loading&hellip;</span>' +
+      '</div>' +
+      '<iframe title="' + title + ' (part 2)" ' +
+        'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>' +
+      '</iframe>';
+    main.appendChild(videoDiv2);
+  }
+
+  var embed3 = project.url3
+    ? getEmbedUrl({ type: project.type, url: project.url3 })
+    : null;
+  if (embed3) {
+    var videoDiv3 = el('div', 'video-embed');
+    videoDiv3.dataset.src = embed3;
+    videoDiv3.style.marginTop = '1.5rem';
+    videoDiv3.innerHTML =
+      '<div class="video-loading">' +
+        '<span class="video-loading-text">Loading&hellip;</span>' +
+      '</div>' +
+      '<iframe title="' + title + ' (part 3)" ' +
+        'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>' +
+      '</iframe>';
+    main.appendChild(videoDiv3);
+  }
+
+} else {
       var fallback = el('div', 'project-fallback');
       fallback.innerHTML = '<p>Embed unavailable.</p>' +
         (url !== '#'

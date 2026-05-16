@@ -46,6 +46,10 @@ const projects = [
     type: "youtube",                       // ← "youtube" | "google-drive" | "link"
     url:  "https://www.youtube.com/watch?v=wza0UxcoxY8",
     // ↑ PASTE YOUR VIDEO LINK HERE
+    url2: "https://www.youtube.com/watch?v=RhobC6RbzRg",
+url3: "https://www.youtube.com/watch?v=6TIl-3xs-og",
+
+    
 
     thumbnail: "assets/thumbnails/field-notes-thumbnail.jpg",
     // ↑ Optional thumbnail — not currently displayed but useful to keep
