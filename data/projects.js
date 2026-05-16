@@ -79,7 +79,7 @@ const projects = [
     description: "A series of observational clips capturing the overlooked: morning routines, corner shops, the sound of rain on a tin roof.",
 
     type: "youtube",                       // ← VIDEO TYPE
-    url:  "https://www.youtube.com/watch?v=REPLACE_WITH_VIDEO_ID",
+    url:  "https://www.youtube.com/watch?v=Ws4d1Nvt0g0",
     // ↑ REPLACE THIS with your real YouTube link
 
     thumbnail: "assets/thumbnails/small-observations-thumbnail.jpg",
