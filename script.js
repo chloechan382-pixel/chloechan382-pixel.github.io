@@ -291,11 +291,7 @@ if (embed) {
         wrapper.appendChild(imgEl);
         wrapper.appendChild(ph);
 
-        if (imgData.caption) {
-          var cap = el('span', 'scatter-caption');
-          cap.textContent = imgData.caption;
-          wrapper.appendChild(cap);
-        }
+        /* captions intentionally omitted in scatter zones */
       } else {
         /* No image data: show a placeholder box */
         var phOnly = el('div', 'scatter-placeholder');

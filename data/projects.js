@@ -57,13 +57,16 @@ url3: "https://www.youtube.com/watch?v=6TIl-3xs-og",
     processImages: [
       // ↓ Photos that float beside the video. Add or remove lines freely.
       //   Drop the image files into  assets/process/  first.
-      { src: "assets/process/field-notes-01.jpg",  alt: "Location still",  caption: "Location still" },
-      { src: "assets/process/field-notes-02.jpg",  alt: "Sketch notes",    caption: "Sketch" },
-      { src: "assets/process/field-notes-03.jpg",  alt: "Editing notes",   caption: "Editing notes" }
+      { src: "assets/process/field-notes-01.jpg",  alt: "Sketch notes",    caption: "Image 1" },
+      { src: "assets/process/field-notes-02.jpg",  alt: "Chaem and friend with moral dilemma cards",  caption: "Image 2" },
+      { src: "assets/process/field-notes-03.jpg",  alt: "ASL professors in studio",   caption: "Image 3" }
       // ← Add more lines here if you have more photos (up to ~4 looks best)
     ],
 
-    detailImages: [],
+    detailImages: [
+      // ↓ Optional extra images — leave [] empty if you don't need them
+      { src: "assets/process/field-notes-detail-01.jpg", alt: "Princeton Professor Dr. Selinger in the studio", caption: "Image 4" }
+    ],
 
     tags: ["video", "research", "visual story"]
     // ↑ Short labels shown under the title. Add as many as you like.
@@ -89,8 +92,8 @@ url:  "https://www.youtube.com/shorts/L5_gvoBYQ8c",                    // ← VI
     thumbnail: "assets/thumbnails/small-observations-thumbnail.jpg",
 
     processImages: [
-      { src: "assets/process/small-observations-01.jpg", alt: "Behind the scenes", caption: "Behind the scenes" },
-      { src: "assets/process/small-observations-02.jpg", alt: "Street still",       caption: "Street still" }
+      { src: "assets/process/small-observations-01.jpg", alt: "Behind the scenes", caption: "Image 5" },
+      { src: "assets/process/small-observations-02.jpg", alt: "Street still",       caption: "Image 6" }
     ],
 
     detailImages: [],  // ← empty = no detail images for this project
@@ -116,12 +119,14 @@ url:  "https://www.youtube.com/shorts/L5_gvoBYQ8c",                    // ← VI
     thumbnail: "assets/thumbnails/archive-experiment-thumbnail.jpg",
 
     processImages: [
-      { src: "assets/process/archive-experiment-01.jpg", alt: "Source materials", caption: "Source materials" },
-      { src: "assets/process/archive-experiment-02.jpg", alt: "Layout test",       caption: "Layout test" },
-      { src: "assets/process/archive-experiment-03.jpg", alt: "Final spread",      caption: "Final spread" }
+      { src: "assets/process/archive-experiment-01.jpg", alt: "Source materials", caption: "Image 7" },
+      { src: "assets/process/archive-experiment-02.jpg", alt: "Layout test",       caption: "Image 8" },
+      { src: "assets/process/archive-experiment-03.jpg", alt: "Final spread",      caption: "Image 9" }
     ],
 
-    detailImages: [],
+    detailImages: [
+      { src: "assets/process/archive-experiment-detail-01.jpg", alt: "Spread detail", caption: "Image 10" }
+    ],
 
     tags: ["design", "archive", "print"]
   }
