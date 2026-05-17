@@ -91,7 +91,6 @@ const projects = [
  processImages: [
   { src: "assets/process/archive-experiment-01.jpg", alt: "Aidha team", caption: "The Team" },
   { src: "assets/process/archive-experiment-02.jpg", alt: "Aidha friends", caption: "New friends :)" },
-  { src: "assets/process/aidha5.JPG", alt: "Photography exhibition", caption: "Unspoken Life MDW Photography Exhibition", placement: "below-video" }
 ],
 
   detailImages: [],
