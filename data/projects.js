@@ -29,7 +29,7 @@ const projects = [
 
     processImages: [
       { src: "assets/process/field-notes-01.jpg", alt: "Studio setup", caption: "Makeshift set at Princeton's Video Production Studio" },
-      { src: "assets/process/field-notes-02.jpg", alt: "Moral dilemma cards", caption: "Chaem and friend with moral dilemma cards" },
+      { src: "assets/process/field-notes-02.jpg", alt: "Moral dilemma cards", caption: "My friends on set for Evilometer" },
       { src: "assets/process/field-notes-03.jpg", alt: "ASL professors in studio", caption: "My team and my ASL professors <3" }
     ],
 
@@ -61,7 +61,7 @@ const projects = [
 
     processImages: [
       { src: "assets/process/forbes_pic.JPG", alt: "Forbes College event", caption: "" },
-      { src: "assets/process/small-observations-01.jpg", alt: "Clash of the Colleges", caption: "" },
+      { src: "assets/process/small-observations-01.jpg", alt: "Clash of the Colleges", caption: "Clash of the Colleges" },
       { src: "assets/process/whitman_yell_pic.JPG", alt: "Whitman College event", caption: "" }
     ],
 
