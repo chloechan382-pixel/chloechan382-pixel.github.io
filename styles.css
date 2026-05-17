@@ -1042,3 +1042,16 @@ figure { margin: 0; }
   letter-spacing: 0.06em;
   color: #b7b7b7;
 }
+
+/* Reduce awkward space between final project and contact section */
+.section--work {
+  padding-bottom: 2rem !important;
+}
+
+#projects-container .project-section:last-child {
+  padding-bottom: 2rem !important;
+}
+
+.section--contact {
+  padding-top: 3rem !important;
+}
