@@ -57,7 +57,7 @@ url3: "https://www.youtube.com/watch?v=6TIl-3xs-og",
     processImages: [
       // ↓ Photos that float beside the video. Add or remove lines freely.
       //   Drop the image files into  assets/process/  first.
-      { src: "assets/process/field-notes-01.jpg",  alt: "Sketch notes",    caption: "<Makeshift set at Princeton's Video Production Studio" },
+      { src: "assets/process/field-notes-01.jpg",  alt: "Sketch notes",    caption: "Makeshift set at Princeton's Video Production Studio" },
       { src: "assets/process/field-notes-02.jpg",  alt: "Chaem and friend with moral dilemma cards",  caption: " " },
       { src: "assets/process/field-notes-03.jpg",  alt: "ASL professors in studio",   caption: "My team and my ASL professors <3" }
       // ← Add more lines here if you have more photos (up to ~4 looks best)
@@ -88,11 +88,11 @@ url:  "https://www.youtube.com/shorts/L5_gvoBYQ8c",                    // ← VI
 
     thumbnail: "assets/thumbnails/small-observations-thumbnail.jpg",
 
-    processImages: [
-      { src: "assets/process/small-observations-01.jpg", alt: "Behind the scenes", caption: "Clash of the Colleges" },
-      { src: "assets/process/forbes_pic.JPG", alt: "Street still",       caption: "Forbeezy Forbeezy" }
-      { src: "assets/process/whitman_yell_pic.JPG", alt: "Street still",       caption: " " }
-    ],
+   processImages: [
+  { src: "assets/process/small-observations-01.jpg", alt: "Behind the scenes", caption: "Clash of the Colleges" },
+  { src: "assets/process/forbes_pic.JPG", alt: "Street still", caption: "Forbeezy Forbeezy" },
+  { src: "assets/process/whitman_yell_pic.JPG", alt: "Street still", caption: " " }
+],
 
     detailImages: [],  // ← empty = no detail images for this project
 
