@@ -1015,3 +1015,30 @@ figure { margin: 0; }
     object-fit: cover;
   }
 }
+
+/* Images placed directly under a project's video */
+.below-video-images {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.below-video-images .img-wrap {
+  width: 70%;
+  align-self: center;
+}
+
+.below-video-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.below-video-images .img-caption {
+  display: block;
+  margin-top: 0.65rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  color: #b7b7b7;
+}

@@ -195,6 +195,19 @@ if (embed) {
       main.appendChild(fallback);
     }
 
+    /* Images that should sit under the video */
+var belowVideoList = Array.isArray(project.belowVideoImages) ? project.belowVideoImages : [];
+
+if (belowVideoList.length) {
+  var belowVideoImgs = el('div', 'below-video-images');
+
+  belowVideoList.forEach(function (imgData) {
+    belowVideoImgs.appendChild(buildImgWrap(imgData));
+  });
+
+  main.appendChild(belowVideoImgs);
+}
+
     /* Aside column: description + floating images */
     var aside = el('div', 'project-aside');
 

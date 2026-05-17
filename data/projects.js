@@ -73,30 +73,33 @@ const projects = [
   /* ──────────────────────────────────────────────────────────
      PROJECT 3
      ────────────────────────────────────────────────────────── */
-  {
-    title: "Singapore’s Untold Story: Migrant Domestic Workers",
-    category: "Storytelling Campaign",
-    year: "2024",
+ {
+  title: "Singapore’s Untold Story: Migrant Domestic Workers",
+  category: "Storytelling Campaign",
+  year: "2024",
 
-    description: "Singapore has a side most visitors never see. That summer, I sat across from women who had left their families, crossed oceans, and built quiet lives of extraordinary resilience, and I just listened. Working with Aidha, I produced a storytelling campaign built entirely around their voices, their words, their faces. It was the first time I understood what it really means to make something for someone, not just about them.",
+  description: "Singapore has a side most visitors never see. That summer, I sat across from women who had left their families, crossed oceans, and built quiet lives of extraordinary resilience, and I just listened. Working with Aidha, I produced a storytelling campaign built entirely around their voices, their words, their faces. It was the first time I understood what it really means to make something for someone, not just about them.",
 
-    type: "youtube",
-    url: "https://www.youtube.com/watch?v=-sQv68r94SI",
+  type: "youtube",
+  url: "https://www.youtube.com/watch?v=-sQv68r94SI",
 
-    linkUrl: "",
-    linkLabel: "",
+  linkUrl: "",
+  linkLabel: "",
 
-    thumbnail: "assets/thumbnails/archive-experiment-thumbnail.jpg",
+  thumbnail: "assets/thumbnails/archive-experiment-thumbnail.jpg",
 
-    processImages: [
-      { src: "assets/process/archive-experiment-01.jpg", alt: "Aidha team", caption: "The Team" },
-      { src: "assets/process/archive-experiment-02.jpg", alt: "Aidha friends", caption: "New friends :)" },
-      { src: "assets/process/aidha5.JPG", alt: "Photography exhibition", caption: "Unspoken Life MDW Photography Exhibition" }
-    ],
+  processImages: [
+    { src: "assets/process/archive-experiment-01.jpg", alt: "Aidha team", caption: "The Team" },
+    { src: "assets/process/archive-experiment-02.jpg", alt: "Aidha friends", caption: "New friends :)" }
+  ],
 
-    detailImages: [],
+  belowVideoImages: [
+    { src: "assets/process/aidha5.JPG", alt: "Photography exhibition", caption: "Unspoken Life MDW Photography Exhibition" }
+  ],
 
-    tags: ["storytelling", "witness", "impact"]
-  }
+  detailImages: [],
+
+  tags: ["storytelling", "witness", "impact"]
+}
 
 ];
