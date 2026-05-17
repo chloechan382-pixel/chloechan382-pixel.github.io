@@ -90,7 +90,7 @@ url:  "https://www.youtube.com/shorts/L5_gvoBYQ8c",                    // ← VI
 
     processImages: [
       { src: "assets/process/small-observations-01.jpg", alt: "Behind the scenes", caption: "Image 5" },
-      { src: "assets/process/small-observations-02.jpg", alt: "Street still",       caption: "Image 6" }
+      { src: "assets/process/forbes clash of colleges pic.JPG", alt: "Street still",       caption: "Image 6" }
     ],
 
     detailImages: [],  // ← empty = no detail images for this project
