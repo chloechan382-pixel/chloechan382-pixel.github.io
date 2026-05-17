@@ -89,8 +89,8 @@ url:  "https://www.youtube.com/shorts/L5_gvoBYQ8c",                    // ← VI
     thumbnail: "assets/thumbnails/small-observations-thumbnail.jpg",
 
 processImages: [
-  { src: "assets/process/small-observations-01.jpg", alt: "Behind the scenes", caption: "Clash of the Colleges" },
-  { src: "assets/process/forbes_pic.JPG", alt: "Street still", caption: "Forbeezy Forbeezy" },
+  { src: "assets/process/forbes_pic.JPG", alt: "Behind the scenes", caption: " " },
+  { src: "assets/process/small-observations-01.jpg", alt: "Street still", caption: " " },
   { src: "assets/process/whitman_yell_pic.JPG", alt: "Street still", caption: " " }
 ],
 
