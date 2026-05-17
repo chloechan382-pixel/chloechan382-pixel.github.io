@@ -2,136 +2,100 @@
  * ============================================================
  *  PROJECTS.JS  —  ADD / EDIT YOUR WORK HERE
  * ============================================================
- *
- *  Each project is one { } block inside the [ ] array below.
- *  To add a new project: copy one full block, paste it at the
- *  TOP of the list (before the first {), and fill it in.
- *  Save the file — the page updates automatically.
- *
- *  ── VIDEO TYPES ──────────────────────────────────────────
- *  YouTube       →  type: "youtube"
- *                   url:  paste the normal youtube.com/watch?v= link
- *                         OR a youtu.be/XXXX short link
- *
- *  Google Drive  →  type: "google-drive"
- *                   url:  right-click file in Drive → Share →
- *                         "Anyone with the link" → copy link
- *
- *  No embed      →  type: "link"
- *                   Shows an "Open project" button instead of a player.
- *
- *  ── PHOTOS ───────────────────────────────────────────────
- *  Drop photos into:   assets/process/
- *  Name them clearly:  my-project-01.jpg, my-project-02.jpg …
- *  Then reference them in processImages / detailImages below.
- *  Up to 4 processImages show as floating frames beside the video.
- *  detailImages are optional extras — leave the array [] empty if unused.
- *
- * ============================================================
  */
 
 const projects = [
 
   /* ──────────────────────────────────────────────────────────
-     PROJECT 1  (shows first / at the top of the page)
+     PROJECT 1
      ────────────────────────────────────────────────────────── */
   {
-    title:       "Field Notes",            // ← YOUR PROJECT TITLE
-    category:    "Video Essay",            // ← CATEGORY shown in small caps
-    year:        "2026",                   // ← YEAR
+    title: "Sophomore Summer",
+    category: "Video Essay",
+    year: "2026",
 
-    description: "A short visual study about place, memory, and quiet movement in familiar spaces.",
-    // ↑ One or two sentences about the project.
+    description: "Some bets you make on yourself. Sophomore summer, I went home and built something from nothing. For a lot of us, the humanities come with baggage — cramming for AP lit, falling asleep in art history, the creeping feeling that it was all a little pretentious. Thinker's Cap was my answer to that, to prove that the humanities don't have to be boring. We ranked moral dilemmas on an Evilometer, asked strangers what the most beautiful work of art they'd ever seen was, and filmed Princeton's ASL professors for Deaf Awareness Month, showing the world that these conversations can be surprising, inclusive, and genuinely worth having.",
 
-    type: "youtube",                       // ← "youtube" | "google-drive" | "link"
-    url:  "https://www.youtube.com/watch?v=wza0UxcoxY8",
-    // ↑ PASTE YOUR VIDEO LINK HERE
+    type: "youtube",
+    url: "https://www.youtube.com/watch?v=wza0UxcoxY8",
     url2: "https://www.youtube.com/watch?v=RhobC6RbzRg",
-url3: "https://www.youtube.com/watch?v=6TIl-3xs-og",
+    url3: "https://www.youtube.com/watch?v=6TIl-3xs-og",
 
-    
+    linkUrl: "https://www.instagram.com/thinkerscapofficial/",
+    linkLabel: "View original ↗",
 
     thumbnail: "assets/thumbnails/field-notes-thumbnail.jpg",
-    // ↑ Optional thumbnail — not currently displayed but useful to keep
 
     processImages: [
-      // ↓ Photos that float beside the video. Add or remove lines freely.
-      //   Drop the image files into  assets/process/  first.
-      { src: "assets/process/field-notes-01.jpg",  alt: "Sketch notes",    caption: "<Makeshift set at Princeton's Video Production Studio" },
-      { src: "assets/process/field-notes-02.jpg",  alt: "Chaem and friend with moral dilemma cards",  caption: " " },
-      { src: "assets/process/field-notes-03.jpg",  alt: "ASL professors in studio",   caption: "My team and my ASL professors <3" }
-      // ← Add more lines here if you have more photos (up to ~4 looks best)
+      { src: "assets/process/field-notes-01.jpg", alt: "Studio setup", caption: "Makeshift set at Princeton's Video Production Studio" },
+      { src: "assets/process/field-notes-02.jpg", alt: "Moral dilemma cards", caption: "Chaem and friend with moral dilemma cards" },
+      { src: "assets/process/field-notes-03.jpg", alt: "ASL professors in studio", caption: "My team and my ASL professors <3" }
     ],
 
-   detailImages: [],
+    detailImages: [],
 
-    tags: ["video", "research", "visual story"]
-    // ↑ Short labels shown under the title. Add as many as you like.
+    tags: ["access", "curiosity", "culture"]
   },
 
   /* ──────────────────────────────────────────────────────────
      PROJECT 2
      ────────────────────────────────────────────────────────── */
   {
-    title:       "Small Observations",     // ← YOUR PROJECT TITLE
-    category:    "Short Film",             // ← CATEGORY
-    year:        "2025",                   // ← YEAR
+    title: "Promoting play at Princeton",
+    category: "Marketing",
+    year: "2025",
 
-    description: "A series of observational clips capturing the overlooked: morning routines, corner shops, the sound of rain on a tin roof.",
+    description: "A year spent behind the camera and in the marketing office, learning what it means to make something that actually feels like a place. Working under an established brand taught me how to be creative within constraints — to find the tone, match it, and eventually trust it. The first video was nominated as Princeton’s submission for the 2025 NIRSA Creative Excellence Award, a national marketing award for collegiate recreation. These are some of my favorite moments from that time :)",
 
     type: "youtube",
-format: "shorts",
-url:  "https://www.youtube.com/shorts/L5_gvoBYQ8c",                    // ← VIDEO TYPE
-    url2:  "https://www.youtube.com/shorts/PhW4xruDqMc",
+    format: "shorts",
+    url: "https://www.youtube.com/shorts/L5_gvoBYQ8c",
+    url2: "https://www.youtube.com/shorts/PhW4xruDqMc",
     url3: "https://www.youtube.com/shorts/b0927naS_Ww",
-    // ↑ REPLACE THIS with your real YouTube link
+
+    linkUrl: "https://reimaginerecreationatprinceton.my.canva.site/nirsadigitalcontent2025/",
+    linkLabel: "Award nomination ↗",
 
     thumbnail: "assets/thumbnails/small-observations-thumbnail.jpg",
 
-processImages: [
-  { src: "assets/process/forbes_pic.JPG", alt: "Behind the scenes", caption: " " },
-  { src: "assets/process/small-observations-01.jpg", alt: "Street still", caption: " " },
-  { src: "assets/process/whitman_yell_pic.JPG", alt: "Street still", caption: " " }
-],
+    processImages: [
+      { src: "assets/process/forbes_pic.JPG", alt: "Forbes College event", caption: "" },
+      { src: "assets/process/small-observations-01.jpg", alt: "Clash of the Colleges", caption: "" },
+      { src: "assets/process/whitman_yell_pic.JPG", alt: "Whitman College event", caption: "" }
+    ],
 
-    detailImages: [],  // ← empty = no detail images for this project
+    detailImages: [],
 
-    tags: ["film", "observational", "short"]
+    tags: ["marketing", "social media", "branding"]
   },
 
   /* ──────────────────────────────────────────────────────────
      PROJECT 3
      ────────────────────────────────────────────────────────── */
   {
-    title:       "Archive Experiment",     // ← YOUR PROJECT TITLE
-    category:    "Design Research",        // ← CATEGORY
-    year:        "2024",                   // ← YEAR
+    title: "Singapore’s Untold Story: Migrant Domestic Workers",
+    category: "Storytelling Campaign",
+    year: "2024",
 
-    description: "An experiment in archiving personal ephemera — ticket stubs, receipts, handwritten notes — into a visual document that reads like a diary.",
+    description: "Singapore has a side most visitors never see. That summer, I sat across from women who had left their families, crossed oceans, and built quiet lives of extraordinary resilience, and I just listened. Working with Aidha, I produced a storytelling campaign built entirely around their voices, their words, their faces. It was the first time I understood what it really means to make something for someone, not just about them.",
 
-   type: "youtube",           // ← VIDEO TYPE
-    url:  "https://www.youtube.com/watch?v=-sQv68r94SI",
-   
-    // ↑ REPLACE THIS with your real YouTube link
+    type: "youtube",
+    url: "https://www.youtube.com/watch?v=-sQv68r94SI",
+
+    linkUrl: "",
+    linkLabel: "",
 
     thumbnail: "assets/thumbnails/archive-experiment-thumbnail.jpg",
 
     processImages: [
-      { src: "assets/process/archive-experiment-01.jpg", alt: "Source materials", caption: "The Team" },
-      { src: "assets/process/archive-experiment-02.jpg", alt: "Layout test",       caption: "New friends :)" },
-      { src: "assets/process/aidha5.JPG", alt: "Final spread",      caption: "Unspoken Life MDW Photography Exhibition" }
+      { src: "assets/process/archive-experiment-01.jpg", alt: "Aidha team", caption: "The Team" },
+      { src: "assets/process/archive-experiment-02.jpg", alt: "Aidha friends", caption: "New friends :)" },
+      { src: "assets/process/aidha5.JPG", alt: "Photography exhibition", caption: "Unspoken Life MDW Photography Exhibition" }
     ],
 
-   detailImages: [],
+    detailImages: [],
 
-    tags: ["design", "archive", "print"]
+    tags: ["storytelling", "witness", "impact"]
   }
 
-  /* ──────────────────────────────────────────────────────────
-     TO ADD ANOTHER PROJECT:
-     Copy the block above (from the opening { to the closing }),
-     paste it here, change the content, save.
-     ────────────────────────────────────────────────────────── */
-
 ];
-
