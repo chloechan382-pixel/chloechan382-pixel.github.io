@@ -1,3 +1,4 @@
+console.log("UPDATED PROJECTS FILE IS LOADING");
 /**
  * ============================================================
  *  PROJECTS.JS  —  ADD / EDIT YOUR WORK HERE
