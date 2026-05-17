@@ -218,32 +218,38 @@ if (embed) {
     aside.appendChild(descDiv);
 
   /* Project images */
+/* Project images */
+var fullWidthImgs = null;
 var imgList = Array.isArray(project.processImages) ? project.processImages : [];
+
 if (imgList.length) {
   var imgs = el('div', 'project-images');
 
   if (project.format === 'shorts') {
-    imgs.className = 'project-images project-images--under-videos';
+    imgs.className = 'project-images project-images--full-width';
   }
 
   imgList.forEach(function (imgData) {
     imgs.appendChild(buildImgWrap(imgData));
   });
 
-  // Shorts sections: images go under videos
-  // Normal sections: images stay on the side
   if (project.format === 'shorts') {
-    main.appendChild(imgs);
+    fullWidthImgs = imgs;
   } else {
     aside.appendChild(imgs);
   }
 }
 
-    body.appendChild(main);
-    body.appendChild(aside);
-    section.appendChild(header);
-    section.appendChild(body);
-    return section;
+body.appendChild(main);
+body.appendChild(aside);
+section.appendChild(header);
+section.appendChild(body);
+
+if (fullWidthImgs) {
+  section.appendChild(fullWidthImgs);
+}
+
+return section;
   }
 
   /* ----------------------------------------------------------------
