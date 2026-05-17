@@ -57,9 +57,9 @@ url3: "https://www.youtube.com/watch?v=6TIl-3xs-og",
     processImages: [
       // ↓ Photos that float beside the video. Add or remove lines freely.
       //   Drop the image files into  assets/process/  first.
-      { src: "assets/process/field-notes-01.jpg",  alt: "Sketch notes",    caption: "Makeshift set at Princeton's Video Production Studio" },
-      { src: "assets/process/field-notes-02.jpg",  alt: "Chaem and friend with moral dilemma cards",  caption: " " },
-      { src: "assets/process/field-notes-03.jpg",  alt: "ASL professors in studio",   caption: "My team and my ASL professors <3" }
+      { src: "assets/process/field-notes-01.jpg",  alt: "Sketch notes",    caption: "Image 1" },
+      { src: "assets/process/field-notes-02.jpg",  alt: "Chaem and friend with moral dilemma cards",  caption: "Image 2" },
+      { src: "assets/process/field-notes-03.jpg",  alt: "ASL professors in studio",   caption: "Image 3" }
       // ← Add more lines here if you have more photos (up to ~4 looks best)
     ],
 
@@ -88,11 +88,10 @@ url:  "https://www.youtube.com/shorts/L5_gvoBYQ8c",                    // ← VI
 
     thumbnail: "assets/thumbnails/small-observations-thumbnail.jpg",
 
-   processImages: [
-  { src: "assets/process/small-observations-01.jpg", alt: "Behind the scenes", caption: "Clash of the Colleges" },
-  { src: "assets/process/forbes_pic.JPG", alt: "Street still", caption: "Forbeezy Forbeezy" },
-  { src: "assets/process/whitman_yell_pic.JPG", alt: "Street still", caption: " " }
-],
+    processImages: [
+      { src: "assets/process/small-observations-01.jpg", alt: "Behind the scenes", caption: "Image 5" },
+      { src: "assets/process/forbes clash of colleges pic.JPG", alt: "Street still",       caption: "Image 6" }
+    ],
 
     detailImages: [],  // ← empty = no detail images for this project
 
@@ -117,9 +116,9 @@ url:  "https://www.youtube.com/shorts/L5_gvoBYQ8c",                    // ← VI
     thumbnail: "assets/thumbnails/archive-experiment-thumbnail.jpg",
 
     processImages: [
-      { src: "assets/process/archive-experiment-01.jpg", alt: "Source materials", caption: "The Team" },
-      { src: "assets/process/archive-experiment-02.jpg", alt: "Layout test",       caption: "New friends :)" },
-      { src: "assets/process/aidha5.JPG", alt: "Final spread",      caption: "Unspoken Life MDW Photography Exhibition" }
+      { src: "assets/process/archive-experiment-01.jpg", alt: "Source materials", caption: "Image 7" },
+      { src: "assets/process/archive-experiment-02.jpg", alt: "Layout test",       caption: "Image 8" },
+      { src: "assets/process/archive-experiment-03.jpg", alt: "Final spread",      caption: "Image 9" }
     ],
 
    detailImages: [],
