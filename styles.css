@@ -1018,14 +1018,14 @@ figure { margin: 0; }
 
 /* Images placed directly under a project's video */
 .below-video-images {
-  margin-top: 2rem;
+  margin-top: 3.25rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
 .below-video-images .img-wrap {
-  width: 80% !important;
+  width: 64% !important;
   align-self: center !important;
 }
 
