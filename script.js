@@ -81,7 +81,7 @@
 
       // Scatter zone between projects (not after the last one)
       if (i < projects.length - 1) {
-      /fragment.appendChild(buildScatterZone(project, projects[i + 1], i));
+      //fragment.appendChild(buildScatterZone(project, projects[i + 1], i));
       }
     });
 
