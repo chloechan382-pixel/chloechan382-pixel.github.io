@@ -922,18 +922,27 @@ figure { margin: 0; }
   .section-reveal { opacity: 1 !important; transform: none !important; }
 }
 
-/* Section 2 shorts: three vertical videos */
+/* Section 2 shorts: true 9:16 vertical videos */
 .project-main--shorts {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.4rem;
+  grid-template-columns: repeat(3, 220px);
+  gap: 1.5rem;
+  justify-content: end;
   align-items: start;
 }
 
 .project-main--shorts .video-embed {
-  margin-top: 0 !important;
+  width: 220px !important;
+  height: 391px !important;
   aspect-ratio: 9 / 16 !important;
-  min-height: 400px;
+  min-height: 0 !important;
+  margin-top: 0 !important;
+  background: #000;
+}
+
+.project-main--shorts .video-embed iframe {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* Section 2: full-width landscape image strip */
@@ -954,7 +963,6 @@ figure { margin: 0; }
 .project-images--full-width .img-wrap {
   width: clamp(340px, 30vw, 500px) !important;
   max-width: none !important;
-  transform: none !important;
 }
 
 .project-images--full-width .img-wrap:nth-child(1) {
@@ -999,7 +1007,6 @@ figure { margin: 0; }
 
   .project-images--full-width .img-wrap {
     width: 100% !important;
-    margin-top: 0 !important;
   }
 
   .project-images--full-width img {
